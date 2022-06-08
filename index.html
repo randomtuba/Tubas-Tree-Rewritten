@@ -24,8 +24,8 @@
 	<script src="js/technical/displays.js"></script>
 	
 	<script src="js/game.js"></script>
+  <script src="js/utils.js"></script>
   <script src="js/achievements.js"></script>
-	<script src="js/utils.js"></script>
 	<script src="js/utils/easyAccess.js"></script>
 	<script src="js/technical/systemComponents.js"></script>
 	<script src="js/components.js"></script>
@@ -35,7 +35,6 @@
 	<script src="js/utils/options.js"></script>
 	<script src="js/utils/save.js"></script>
 	<script src="js/utils/themes.js"></script>
-  <!--- <script src="js/news.js"></script> !--->
 
 </head>
 
@@ -51,7 +50,8 @@
 		<div v-if="(tmp.gameEnded && !player.keepGoing)" class="fullWidth">
 			<br>
 			<h2>{{modInfo.name}} {{VERSION.withoutName}}</h2><br><br>
-			<h3 v-html="modInfo.winText"></h3><br><br><br>
+			<h3 v-html="modInfo.winText"></h3><br>
+			<h3>Please check the Discord to see if there are new content updates!</h3><br><br>
 			<div v-if="!player.timePlayedReset">It took you {{formatTime(player.timePlayed)}} to beat the game.</div>
 			<br>
 			<button class="longUpg can" onclick="hardReset(true)">Play Again</button>&nbsp;&nbsp;&nbsp;&nbsp;<button
@@ -72,9 +72,6 @@
 			col: (player.tab !== 'none' && player.navTab !== 'none'), 
 			left: (player.tab !== 'none' && player.navTab !== 'none')}"
 			 :style="{'margin-top': !readData(layoutInfo.showTree) && player.tab == 'info-tab' ? '50px' : ''}">
-      <!--- <div id = "newsTicker">
-				<div id = "newsContent" style = "display: inline-block; position: relative;"></div>
-			</div>  !--->
 			<div id="version" onclick="showTab('changelog-tab')" class="overlayThing" style="margin-right: 13px" >
 				{{VERSION.withoutName}}</div>
 			<button
