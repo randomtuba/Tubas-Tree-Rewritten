@@ -162,7 +162,7 @@ addLayer("p", {
         if(hasUpgrade("p",12)) mult = mult.mul(3)
         if(hasAchievement("g",16)) mult = mult.mul(2)
         mult = mult.mul(buyableEffect("p",12))
-        mult = mult.mul(player.sk.cloningSkill.pow(1.1))
+        mult = mult.mul(player.sk.cloningSkill.pow(1.1).add(1))
         if(hasAchievement("g",26)) mult = mult.mul(70)
         return mult
     },
