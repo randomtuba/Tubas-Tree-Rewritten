@@ -215,7 +215,7 @@ addLayer("p", {
     onPrestige() {
       if(hasUpgrade("p",21)) player.sk.points = player.sk.points.add(new Decimal(player.p.resetTime).div(2).mul(hasUpgrade("n",21)?4:1).min(new Decimal(1000).mul(hasUpgrade("n",21)?4:1)))
     },
-    layerShown(){return hasUpgrade("p",25) || player.a.total.gte(1) || player.t.total.gte(1)},
+    layerShown(){return hasUpgrade("p",25) || player.a.total.gte(1)},
     doReset(layer) {
 
     if (!(layers[layer].row > this.row)) return
@@ -354,7 +354,7 @@ addLayer("p", {
             player.p.points = player.p.points.sub(this.cost())
             setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
         },
-        unlocked() { return hasUpgrade("a",15) || player.a.total.gte(1) },
+        unlocked() { return hasUpgrade("a",15) },
         effect(x) {
           mult = getBuyableAmount("p",13).gte(60) ? new Decimal(100).pow(60).mul(new Decimal(10).pow(x.sub(60))) : new Decimal(100).pow(x)
           return mult

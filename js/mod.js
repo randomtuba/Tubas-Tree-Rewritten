@@ -13,12 +13,16 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.2",
+	num: "0.0.2.1",
 	name: "Ascension Part One",
 }
 
 let changelog = `<h1>Tuba's Tree Rewritten Changelog</h1><br><span style="color:red;"><b>WARNING: SPOILERS!</b></span><br><br>
-<span style="color:#D2D900;"><b style="font-size: 20px;">v0.0.2: Ascension Part One</b><br>
+<span style="color:#D2D900;">
+<b style="font-size: 20px;">v0.0.2.1</b><br>
+-Fixed a game-breaking bug<br>
+-Fixed a bug where the 3rd prestige buyables appears when you Ascend.<br><br><br>
+<b style="font-size: 20px;">v0.0.2: Ascension Part One</b><br>
 -Added a new prestige layer, Ascension!<br>
 -Added 3 new prestige upgrades and a 3rd prestige buyable.<br>
 -Added 8 ascension upgrades.<br>
