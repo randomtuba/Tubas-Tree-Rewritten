@@ -215,7 +215,6 @@ addLayer("p", {
     onPrestige() {
       if(hasUpgrade("p",21)) player.sk.points = player.sk.points.add(new Decimal(player.p.resetTime).div(2).mul(hasUpgrade("n",21)?4:1).min(new Decimal(1000).mul(hasUpgrade("n",21)?4:1)))
     },
-    layerShown(){return hasUpgrade("p",25) || player.a.total.gte(1)},
     doReset(layer) {
 
     if (!(layers[layer].row > this.row)) return

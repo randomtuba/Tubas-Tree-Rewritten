@@ -13,14 +13,17 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.2.1",
+	num: "0.0.2.2",
 	name: "Ascension Part One",
 }
 
 let changelog = `<h1>Tuba's Tree Rewritten Changelog</h1><br><span style="color:red;"><b>WARNING: SPOILERS!</b></span><br><br>
 <span style="color:#D2D900;">
+<b style="font-size: 20px;">v0.0.2.2</b><br>
+-Fixed a bug where the P button doesn't show up.<br>
+-Fixed the changelog.<br><br><br>
 <b style="font-size: 20px;">v0.0.2.1</b><br>
--Fixed a game-breaking bug<br>
+-Fixed a game-breaking bug.<br>
 -Fixed a bug where the 3rd prestige buyables appears when you Ascend.<br><br><br>
 <b style="font-size: 20px;">v0.0.2: Ascension Part One</b><br>
 -Added a new prestige layer, Ascension!<br>
@@ -29,7 +32,8 @@ let changelog = `<h1>Tuba's Tree Rewritten Changelog</h1><br><span style="color:
 -Added 4 ascension milestones.<br>
 -Added 8 achievements.<br>
 -Added Boosters, which multiply points and are unaffected by taxes!<br>
--Added 3 booster upgrades.<br><br><br></span>
+-Added 3 booster upgrades.<br>
+-Added 2 point upgrades.<br><br><br></span>
 </span>
 <span style="color:#0070CC;"><b style="font-size: 20px;">v0.0.1: Prestige</b><br>
 -Released the game (again).<br>
